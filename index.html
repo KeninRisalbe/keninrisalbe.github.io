@@ -62,14 +62,14 @@
     }
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.5rem;
       margin-top: 1.5rem;
     }
     .skill-item {
       text-align: center;
       background-color: #ffffff;
-      padding: 1rem;
+      padding: 1.5rem;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       transition: transform 0.3s;
@@ -79,14 +79,30 @@
       transform: translateY(-5px);
     }
     .skill-item img {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 0.5rem;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 1rem;
     }
     .skill-item span {
       display: block;
       font-weight: bold;
       color: #1b2a49;
+    }
+    .volver {
+      text-align: center;
+      margin: 3rem 0 2rem;
+    }
+    .volver a {
+      background-color: #1b2a49;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .volver a:hover {
+      background-color: #324c7a;
     }
   </style>
 </head>
@@ -136,6 +152,9 @@
         </div>
       </div>
     </section>
+    <div class="volver">
+      <a href="index.html">← Volver al Inicio</a>
+    </div>
   </div>
 </body>
 </html>
