@@ -18,39 +18,58 @@
       padding: 2rem;
       text-align: center;
     }
+    header h1 {
+      margin: 0;
+    }
     .container {
-      max-width: 960px;
+      max-width: 1000px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
     }
     .service-button {
-      background-color: #1b2a49;
-      color: white;
-      padding: 1.5rem;
+      background-color: #ffffff;
+      border: 2px solid #1b2a49;
       border-radius: 10px;
+      padding: 2rem 1rem;
       text-align: center;
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
     }
     .service-button:hover {
-      background-color: #2f446b;
+      transform: translateY(-5px);
+      background-color: #e6ecf4;
     }
-    .service-icon {
+    .service-button img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 1rem;
+    }
+    .service-button span {
       display: block;
-      margin: 0 auto 1rem;
-      width: 60px;
-      height: 60px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #1b2a49;
+    }
+    .volver {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .volver a {
+      background-color: #1b2a49;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .volver a:hover {
+      background-color: #324c7a;
     }
   </style>
 </head>
@@ -61,19 +80,24 @@
 
   <div class="container">
     <div class="services-grid">
-      <a href="#" class="service-button">
-        <img src="icons/domotica.png" alt="Domótica" class="service-icon">
-        Domotizar tu casa
-      </a>
-      <a href="#" class="service-button">
-        <img src="icons/electricidad.png" alt="Electricidad" class="service-icon">
-        Instalaciones eléctricas y planos domiciliarios
-      </a>
-      <a href="#" class="service-button">
-        <img src="icons/variador.png" alt="Variadores" class="service-icon">
-        Programación de variadores
-      </a>
+      <div class="service-button" onclick="window.open('#', '_blank')">
+        <img src="icons/domotica.jpg" alt="Domótica">
+        <span>Domotizar tu casa</span>
+      </div>
+      <div class="service-button" onclick="window.open('#', '_blank')">
+        <img src="icons/instalaciones.jpg" alt="Instalaciones">
+        <span>Instalaciones eléctricas<br>y planos domiciliarios</span>
+      </div>
+      <div class="service-button" onclick="window.open('#', '_blank')">
+        <img src="icons/variador.jpg" alt="Variadores">
+        <span>Programación de variadores</span>
+      </div>
+    </div>
+
+    <div class="volver">
+      <a href="index.html">← Volver al Inicio</a>
     </div>
   </div>
 </body>
 </html>
+
