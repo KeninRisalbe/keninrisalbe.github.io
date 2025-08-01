@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios - Kenin Risalbe</title>
+  <title>Kenin Risalbe - Ingeniero Mecatrónico</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -16,29 +16,56 @@
       background-color: #1b2a49;
       color: white;
       padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
+    }
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 1rem;
     }
     header h1 {
       margin: 0;
       font-size: 2rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #cdd4e0;
+    }
+    nav {
+      background-color: #273b61;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
     }
     .container {
       max-width: 960px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    h2.titulo-servicios {
-      text-align: center;
-      color: #1b2a49;
-      font-size: 2rem;
-      margin-bottom: 2rem;
+    .skills {
+      margin-top: 2rem;
     }
-    .services-grid {
+    .skills h2 {
+      color: #1b2a49;
+    }
+    .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
+      margin-top: 1.5rem;
     }
-    .service-item {
+    .skill-item {
       text-align: center;
       background-color: #ffffff;
       padding: 1.5rem;
@@ -47,10 +74,10 @@
       transition: transform 0.3s;
       cursor: pointer;
     }
-    .service-item:hover {
+    .skill-item:hover {
       transform: translateY(-5px);
     }
-    .service-item img {
+    .skill-item img {
       width: 100%;
       height: auto;
       aspect-ratio: 4 / 3;
@@ -58,17 +85,17 @@
       margin-bottom: 1rem;
       border-radius: 10px;
     }
-    .service-item span {
+    .skill-item span {
       display: block;
       font-weight: bold;
       font-size: 1.2rem;
       color: #1b2a49;
     }
-    .volver {
+    .subir {
       text-align: center;
       margin-top: 3rem;
     }
-    .volver a {
+    .subir a {
       background-color: #1b2a49;
       color: white;
       padding: 0.8rem 1.5rem;
@@ -76,33 +103,58 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .volver a:hover {
+    .subir a:hover {
       background-color: #324c7a;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Servicios Profesionales</h1>
+    <img src="Foto_perfil.JPG" alt="Foto de Kenin">
+    <h1>Kenin Jorge Risalbe Melgar</h1>
+    <p>Ingeniero Mecatrónico | Especialista en Automatización, Electrónica y Diseño CAD</p>
   </header>
 
+  <nav>
+    <a href="servicios_kenin.html">Servicios</a>
+  </nav>
+
   <div class="container">
-    <div class="services-grid">
-      <div class="service-item" onclick="window.open('https://tu-enlace-domotica.com', '_blank')">
-        <img src="icons/domotica.jpg" alt="Domótica">
-        <span>Domotizar tu casa</span>
+    <section class="skills">
+      <h2>Habilidades y Conocimientos</h2>
+      <div class="skills-grid">
+        <div class="skill-item" onclick="window.open('#', '_blank')">
+          <img src="icons/plc.jpg" alt="PLC">
+          <span>Programación de PLC<br><small>Siemens, Allen Bradley, Mitsubishi</small></span>
+        </div>
+        <div class="skill-item" onclick="window.open('#', '_blank')">
+          <img src="icons/scada.jpg" alt="SCADA">
+          <span>Sistemas SCADA</span>
+        </div>
+        <div class="skill-item" onclick="window.open('#', '_blank')">
+          <img src="icons/cad.jpg" alt="CAD">
+          <span>Diseño CAD<br><small>SolidWorks, Inventor</small></span>
+        </div>
+        <div class="skill-item" onclick="window.open('#', '_blank')">
+          <img src="icons/pcb.jpg" alt="PCB">
+          <span>Diseño de PCBs<br><small>Electrónica aplicada</small></span>
+        </div>
+        <div class="skill-item" onclick="window.open('#', '_blank')">
+          <img src="icons/iot.jpg" alt="IoT">
+          <span>Inteligencia Artificial<br><small>e Internet de las Cosas</small></span>
+        </div>
+        <div class="skill-item" onclick="window.open('#', '_blank')">
+          <img src="icons/report.jpg" alt="Reportes">
+          <span>Análisis de Fuerzas<br><small>y Reportes Técnicos</small></span>
+        </div>
+        <div class="skill-item" onclick="window.open('#', '_blank')">
+          <img src="icons/planos.jpg" alt="Planos">
+          <span>Planos Eléctricos<br><small>Domiciliarios e Industriales</small></span>
+        </div>
       </div>
-      <div class="service-item" onclick="window.open('https://tu-enlace-instalaciones.com', '_blank')">
-        <img src="icons/instalaciones.jpg" alt="Instalaciones Eléctricas">
-        <span>Instalaciones eléctricas y planos domiciliarios</span>
-      </div>
-      <div class="service-item" onclick="window.open('https://tu-enlace-variadores.com', '_blank')">
-        <img src="icons/variador.jpg" alt="Variadores">
-        <span>Programación de variadores</span>
-      </div>
-    </div>
-    <div class="volver">
-      <a href="index.html">← Volver al inicio</a>
+    </section>
+    <div class="subir">
+      <a href="#top">↑ Volver arriba</a>
     </div>
   </div>
 </body>
