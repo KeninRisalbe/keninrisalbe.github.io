@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - Kenin Risalbe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f7fa;
+      color: #1e1e2f;
+    }
+    header {
+      background-color: #1b2a49;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-button {
+      background-color: #1b2a49;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .service-button:hover {
+      background-color: #2f446b;
+    }
+    .service-icon {
+      display: block;
+      margin: 0 auto 1rem;
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Servicios Profesionales</h1>
+  </header>
+
+  <div class="container">
+    <div class="services-grid">
+      <a href="#" class="service-button">
+        <img src="icons/domotica.png" alt="Domótica" class="service-icon">
+        Domotizar tu casa
+      </a>
+      <a href="#" class="service-button">
+        <img src="icons/electricidad.png" alt="Electricidad" class="service-icon">
+        Instalaciones eléctricas y planos domiciliarios
+      </a>
+      <a href="#" class="service-button">
+        <img src="icons/variador.png" alt="Variadores" class="service-icon">
+        Programación de variadores
+      </a>
+    </div>
+  </div>
+</body>
+</html>
